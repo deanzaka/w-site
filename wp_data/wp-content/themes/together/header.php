@@ -51,34 +51,6 @@
 </header><!-- .dt-site-header -->
 <?php endif; ?>
 
-<nav class="dt-main-menu<?php //if ( is_front_page() ) : ?> dt-menu-fixed<?php if ( ! is_front_page() ) : ?> dt-sticky<?php endif; ?>">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 ">
-				<div class="dt-nav-logo">
-					<?php
-					if ( function_exists( 'get_custom_logo' ) && has_custom_logo() ) :
-						the_custom_logo();
-					else : ?>
-					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_attr( bloginfo( 'name' ) ); ?></a></h1>
-				    <?php endif; ?>
-
-                    <div class="dt-menu-btn"></div>
-
-
-				</div><!-- .dt-nav-logo -->
-
-
-
-			</div><!-- .col-lg-3 -->
-
-			<div class="col-lg-9 col-md-9">
-				<?php if ( has_nav_menu('primary') ) { wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container_class'=> 'main-menu-container'  ) ); }?>
-			</div><!-- .col-lg-12 -->
-		</div><!-- .row -->
-	</div><!-- .container -->
-</nav><!-- .dt-main-menu -->
-
 <?php if ( ! is_front_page() ) : ?><div class="dt-menu-sep"></div><?php endif; ?>
 
 <?php if( ! is_front_page() ) : ?>

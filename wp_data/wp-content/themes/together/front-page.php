@@ -8,7 +8,6 @@
  */
 
 get_header();
-
 if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 	<div class="dt-about-couple">
 		<div class="container">
@@ -113,7 +112,7 @@ if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 	</div><!-- .dt-about-couple -->
 <?php endif; ?>
 
-	<?php if( get_theme_mod( 'dt_ceremony_activate' ) != '' ) : ?>
+<?php if( get_theme_mod( 'dt_ceremony_activate' ) != '' ) : ?>
 	<div class="dt-wedding-ceremony">
 		<div class="container">
 			<div class="row">
@@ -134,6 +133,10 @@ if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 							<?php if( get_theme_mod( 'dt_wedding_ceremony_phone' ) ) : ?><li><i class="fa fa-phone"></i><span><?php echo esc_attr( get_theme_mod( 'dt_wedding_ceremony_phone' ) ); ?></span></li><?php endif; ?>
 						</ul>
 					</div><!-- .dt-ceremony-wrap -->
+					<div class="dt-ceremony-map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2733647725518!2d112.73134126487614!3d-7.323160724048214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb6c1bb2a851%3A0x8e75a64634984508!2sMasjid+Raya+Ulul+Albab!5e0!3m2!1sid!2ssg!4v1550128594654" 
+							width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
 				</div><!-- .col-lg-6 -->
 
 				<div class="col-lg-6">
@@ -153,13 +156,17 @@ if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 							<?php if( get_theme_mod( 'dt_wedding_party_phone' ) ) : ?><li><i class="fa fa-phone"></i><span><?php echo esc_attr( get_theme_mod( 'dt_wedding_party_phone' ) ); ?></span></li><?php endif; ?>
 						</ul>
 					</div><!-- .dt-ceremony-wrap -->
+					<div class="dt-ceremony-map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2925698904023!2d112.73413068167494!3d-7.320996722945668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb6c3a36e0a3%3A0x656f0766e5fa39a1!2sAuditorium+UIN+Sunan+Ampel+Surabaya!5e0!3m2!1sid!2ssg!4v1550128975998" 
+							width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
 				</div><!-- .col-lg-6 -->
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</div><!-- .dt-wedding-ceremony -->
 <?php endif; ?>
 
-    <?php $together_contact_cf7  = get_theme_mod( 'dt_rsvp_cf7' ); ?>
+<?php $together_contact_cf7  = get_theme_mod( 'dt_rsvp_cf7' ); ?>
 	<?php if( get_theme_mod( 'dt_rsvp_activate' ) != '' ) : ?>
 	<div class="dt-rsvp">
 		<div class="container">

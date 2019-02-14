@@ -610,6 +610,7 @@ img {
 	padding: 100px 0 40px;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
+	background: #fff;
 }
 
 .dt-about-couple h2,
@@ -669,7 +670,17 @@ img {
 --------------------------------------------------------------*/
 .dt-wedding-ceremony {
 	padding: 100px;
-	background: #fff;
+}
+
+.dt-wedding-ceremony {
+	padding: 50px 0 50px;
+	border: 0;
+	background: rgb(0, 0, 0, 0.35);
+	color: #fff;
+}
+
+.dt-wedding-ceremony .col-lg-6{
+	margin-bottom: 30px;
 }
 
 .dt-ceremony-wrap {
@@ -930,10 +941,10 @@ img {
 # Footer
 --------------------------------------------------------------*/
 .dt-footer {
-	margin-top: 50px;
-	padding: 100px 0;
+	margin-top: 0;
+	padding: 150px 0;
 	text-align: center;
-	background: rgba(0,0,0,.025);
+	background: #fff;
 }
 
 .dt-foot-logo {
@@ -1430,8 +1441,14 @@ textarea:focus {
 	}
 
 	.dt-wedding-ceremony {
-		padding: 0 0 50px;
+		padding: 50px 0 50px;
 		border: 0;
+		background: rgb(0, 0, 0, 0.35);
+		color: #fff;
+	}
+
+	.dt-wedding-ceremony .col-lg-6{
+		margin-bottom: 30px;
 	}
 
 	.dt-ceremony-wrap li:nth-last-of-type(1) {
@@ -1444,7 +1461,7 @@ textarea:focus {
 	}
 
 	.dt-ceremony-wrap {
-		border: 1px solid  #e5e5e5;
+		border: 3px solid  #e5e5e5;
 		padding: 50px 50px;
 		margin-bottom: 50px;
 	}
