@@ -328,6 +328,7 @@ img {
 	height: 700px;
 	z-index: 9999;
 	padding: 0;
+	background-image: url('./images/wood.jpg');
 	background-size: 100% auto !important;
 	overflow: hidden;
 	position: relative;
@@ -352,6 +353,25 @@ img {
 	height: 3px;
 	background: #393939;
 	opacity: 0.5;
+}
+
+.dt-site-header .col-lg-12{
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 175px;
+}
+.dt-site-header .col-lg-12:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('./images/floral.png');
+	background-size: 900px;
+	background-repeat: no-repeat;
+	background-position: 50% 75%;
+	opacity: 0.8;
 }
 
 /*
@@ -380,7 +400,7 @@ img {
 .dt-logo h1,
 .dt-nav-logo h1,
 .dt-foot-logo h1 {
-	font-size: 72px;
+	font-size: 64px;
 	font-family: 'Pacifico', cursive;
 }
 
@@ -1053,7 +1073,7 @@ img {
 .dt-footer:before {
 	content: '';
 	position: absolute;
-	top: 10px;
+	bottom: 10px;
 	right: 10px;
 	width: 100%;
 	height: 100%;
@@ -1550,6 +1570,14 @@ textarea:focus {
 		/*margin-bo*/
 	}
 
+	.dt-about-couple::after{
+		background-size: 37%;
+	}
+
+	.dt-about-couple::before{
+		background-size: 37%;
+	}
+
 	.dt-about-couple .col-lg-6{
 		display: inline-block;
 		width: 100%;
@@ -1617,6 +1645,14 @@ textarea:focus {
 
 	.dt-footer {
 		padding: 50px 0;
+	}
+
+	.dt-footer::after{
+		background-size: 25%;
+	}
+
+	.dt-footer::before{
+		background-size: 25%;
 	}
 
 }
@@ -1697,6 +1733,14 @@ textarea:focus {
 		/*margin-bo*/
 	}
 
+	.dt-about-couple::after{
+		background-size: 45%;
+	}
+
+	.dt-about-couple::before{
+		background-size: 45%;
+	}
+
 	.dt-couple-cont {
 		padding: 50px 20px;
 		margin: 0 0 60px;
@@ -1764,6 +1808,14 @@ textarea:focus {
 
 	.dt-footer {
 		padding: 50px 0;
+	}
+
+	.dt-footer::after{
+		background-size: 30%;
+	}
+
+	.dt-footer::before{
+		background-size: 30%;
 	}
 
 	.dt-footer-widgets > aside > ul{
