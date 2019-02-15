@@ -49,7 +49,7 @@ if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 									</header><!-- .entry-header -->
 
 									<div class="entry-summary">
-										<?php the_excerpt(); ?>
+										<?php the_content(); ?>
 									</div><!-- .entry-content -->
 								</article>
 
@@ -94,7 +94,7 @@ if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 									</header><!-- .entry-header -->
 
 									<div class="entry-summary">
-										<?php the_excerpt(); ?>
+										<?php the_content(); ?>
 									</div><!-- .entry-content -->
 								</article>
 
