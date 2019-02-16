@@ -329,7 +329,7 @@ img {
 	z-index: 9999;
 	padding: 0;
 	background-image: url('./images/wood.jpg');
-	background-size: 100% auto !important;
+	background-size: cover !important;
 	overflow: hidden;
 	position: relative;
     background-color: #000;
@@ -766,24 +766,14 @@ img {
 	opacity: 0.5;
 }
 
-.dt-wedding-ceremony:before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 3px;
-	background: #393939;
-	opacity: 0.5;
-}
-
 .dt-wedding-ceremony .col-lg-6{
 	padding: 15px;
-	margin-bottom: 30px;
+	margin: 0px 5px 30px;
 	background: #fff;
 	display: inline-block;
-	width: 49%;
+	width: 48%;
 	height: 100%;
+	box-shadow: 3px 3px 3px 3px #696969b2;
 }
 
 .dt-ceremony-wrap {
@@ -846,15 +836,32 @@ img {
 # RSVP
 --------------------------------------------------------------*/
 .dt-rsvp {
-	padding: 100px 0;
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
+	padding: 0 0 50px;
+	background: rgb(0, 0, 0, 0.4);
+	color: #696969;
+	position: relative;
+	overflow: hidden;
+}
+
+.dt-rsvp:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: #393939;
+	opacity: 0.5;
 }
 
 .dt-rsvp-form {
-	padding: 0 200px;
+	padding: 50px;
 	text-align: center;
-	font-size: 18px;
+	font-size: 18px;	
+	font-family: 'Nunito', sans-serif;
+	background-image: url('./images/paper-peach.jpg');
+	background-size: cover;
+	box-shadow: 3px 3px 3px 3px #696969b2;
 }
 
 .dt-rsvp-form .textwidget > p {
@@ -887,7 +894,7 @@ img {
 	padding: 8px 10px;
 	border: 1px solid #d5d5d5;
 	border-radius: 3px;
-	background: #fff;
+	background: rgba(255, 255, 255, 0.301);
 }
 
 .dt-rsvp-form input:focus,
@@ -1464,7 +1471,7 @@ textarea:focus {
     						# HEADER
     --------------------------------------------------------------*/
 	.dt-site-header {
-		background-size:  auto 100% !important;
+		background-size: cover !important;
 	}
 
 	.dt-logo {
@@ -1599,7 +1606,6 @@ textarea:focus {
 
 	.dt-wedding-ceremony .col-lg-6{
 		padding: 15px;
-		margin-bottom: 30px;
 		display: inline-block;
 		width: 100%;
 		height: 100%;
@@ -1620,14 +1626,8 @@ textarea:focus {
 		margin-bottom: 50px;
 	}
 
-	.dt-rsvp {
-		padding: 0;
-		border: 0;
-	}
-
 	.dt-rsvp-form {
 		padding: 50px 50px 15px;
-		border: 1px solid #e5e5e5;
 	}
 
 	.dt-recent-blog-post {
@@ -1783,14 +1783,8 @@ textarea:focus {
 		margin: 20px 0 40px;
 	}
 
-	.dt-rsvp {
-		padding: 0;
-		border: 0;
-	}
-
 	.dt-rsvp-form {
 		padding: 50px 20px 15px;
-		border: 1px solid #e5e5e5;
 	}
 
 	.dt-recent-blog-post {

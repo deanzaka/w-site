@@ -166,6 +166,13 @@ if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 	</div><!-- .dt-wedding-ceremony -->
 <?php endif; ?>
 
+<!-- addition, comment segment -->
+<div class="dt-comments">
+	<div class="container">
+		
+	</div>
+</div>
+
 <?php $together_contact_cf7  = get_theme_mod( 'dt_rsvp_cf7' ); ?>
 	<?php if( get_theme_mod( 'dt_rsvp_activate' ) != '' ) : ?>
 	<div class="dt-rsvp">
@@ -182,7 +189,7 @@ if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 	</div><!-- .dt-rsvp -->
 <?php endif; ?>
 
-	<?php if( get_theme_mod( 'dt_recent_post_activate' ) != '' ) : ?>
+<?php if( get_theme_mod( 'dt_recent_post_activate' ) != '' ) : ?>
 	<div class="dt-recent-blog-post">
 		<div class="container">
 			<div class="row">

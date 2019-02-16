@@ -33,8 +33,6 @@
 					<span class="sep"> | </span>
 
 					<?php printf( esc_html__( 'Powered %1$s by %2$s', 'together' ), '', '<a href="https://wordpress.org/" target="_blank">WordPress</a>' ); ?>
-					<span class="sep"> &amp; </span>
-					<?php _e( 'Designed by', 'together' ); ?> <a href="<?php echo esc_url( 'https://www.famethemes.com/'); ?>" target="_blank" rel="designer"><?php _e( 'FameThemes', 'together' )?></a>
 				</div>
 			</div>
 		</div>
