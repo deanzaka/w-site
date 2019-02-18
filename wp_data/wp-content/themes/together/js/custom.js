@@ -10,7 +10,9 @@ jQuery(document).ready( function() {
     jQuery( '#dt_wedding_day' ).simplyCountdown({
         year: wedding_year,
         month: wedding_month,
-        day: wedding_day
+        day: wedding_day,
+        enableUtc: false,
+        hours: 8
     });
 
     // Scroll to Menu

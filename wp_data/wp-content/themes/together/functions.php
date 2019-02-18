@@ -216,3 +216,14 @@ function together_register_required_plugins() {
 	);
 	tgmpa( $plugins, $config );
 }
+
+function disable_comment_form($fields) { 
+	unset($fields['url']);
+	unset($fields['comment_notes_after']);
+	unset($fields['comment_notes']);
+	unset($fields['email_notes']);
+	unset($fields['title_reply']);
+    return $fields;
+}
+add_filter('comment_form_default_fields','disable_comment_form');
+
