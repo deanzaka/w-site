@@ -191,10 +191,7 @@ if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 								// fields"
 								'comment_notes_after' => '',
 								// redefine your own textarea (the comment body)
-								'comment_field' => '<p class="comment-form-comment">
-								<label for="comment">' . _x( '', 'noun' ) . '</label>
-								<br /><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true">
-								</textarea></p>',
+								'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( '', 'noun' ) . '</label><br/><textarea id="comment" name="comment" cols="0" rows="8" aria-required="true"></textarea></p>',
 						); ?>
 						<?php comment_form($form_args); ?>
 					</div><!-- .dt-rsvp-form -->
