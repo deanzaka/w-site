@@ -166,40 +166,30 @@ if( get_theme_mod( 'about_couple' ) != '' ) : ?>
 	</div><!-- .dt-wedding-ceremony -->
 <?php endif; ?>
 
-<!-- addition, comment segment -->
-<div class="dt-comments">
+<div class="dt-rsvp">
 	<div class="container">
-
-	</div>
-</div>
-
-<?php $together_contact_cf7  = get_theme_mod( 'dt_rsvp_cf7' ); ?>
-	<?php if( get_theme_mod( 'dt_rsvp_activate' ) != '' ) : ?>
-	<div class="dt-rsvp">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="dt-rsvp-form">
-						<h2><?php echo esc_attr( get_theme_mod( 'dt_rsvp_title', 'Join Our Wedding' ) ); ?></h2>
-						<?php
-						$form_args = array(
-								// change the title of send button 
-								'label_submit'=>'Send',
-								// change the title of the reply section
-								'title_reply'=>'',
-								// remove "Text or HTML to be displayed after the set of comment 
-								// fields"
-								'comment_notes_after' => '',
-								// redefine your own textarea (the comment body)
-								'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( '', 'noun' ) . '</label><br/><textarea id="comment" name="comment" cols="0" rows="8" aria-required="true"></textarea></p>',
-						); ?>
-						<?php comment_form($form_args); ?>
-					</div><!-- .dt-rsvp-form -->
-				</div><!-- .col-lg-12 -->
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</div><!-- .dt-rsvp -->
-<?php endif; ?>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="dt-rsvp-form">
+					<h2><?php echo esc_attr( get_theme_mod( 'dt_rsvp_title', 'Join Our Wedding' ) ); ?></h2>
+					<?php
+					$form_args = array(
+							// change the title of send button 
+							'label_submit'=>'Send',
+							// change the title of the reply section
+							'title_reply'=>'',
+							// remove "Text or HTML to be displayed after the set of comment 
+							// fields"
+							'comment_notes_after' => '',
+							// redefine your own textarea (the comment body)
+							'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( '', 'noun' ) . '</label><br/><textarea id="comment" name="comment" cols="0" rows="8" aria-required="true"></textarea></p>',
+					); ?>
+					<?php comment_form($form_args); ?>
+				</div><!-- .dt-rsvp-form -->
+			</div><!-- .col-lg-12 -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+</div><!-- .dt-rsvp -->
 
 <?php if( get_theme_mod( 'dt_recent_post_activate' ) != '' ) : ?>
 	<div class="dt-recent-blog-post">
